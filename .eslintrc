@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "react-app", // 외부에 react에서 기존에 설정된 옵션 다 포함
+    "react-app/jest",
+  ],
+  "rules": {
+    // "no-console": "error",
+    "react/prop-types": "off",
+    // "react/prop-types": 1,
+  },
+}

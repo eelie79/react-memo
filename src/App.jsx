@@ -38,15 +38,18 @@ function App() {
   };
 
   const addMemo = () => {
-    setMemos([
+    const now = new Date().getTime();
+    const newMemos = [
       ...memos,
       {
         title: "New Memo",
         content: "This is New Memo",
-        createAt: new Date().getTime(),
-        updateAt: new Date().getTime(),
+        createAt: now,
+        updateAt: now,
       },
-    ]);
+    ];
+
+    setMemos(newMemos);
     setSelectedMemoIndex(memos.length); // isSelected(index = selectedMemoIndex)면 .selected
   };
 

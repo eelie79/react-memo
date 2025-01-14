@@ -1,5 +1,7 @@
 import React from "react";
-import MemoItem from "./MemoItem";
+import "./index.css";
+
+import MemoItem from "../MemoItem";
 
 function MomoList({ memos, selectedMemoIndex, setSelectedMemoIndex, deleteMemo }) {
   return (

@@ -1,0 +1,21 @@
+.SideBar {
+    width: 200px;
+    background-color: rgba(247, 246, 243);
+  }
+.SideBarHeader {
+    padding: 5px;
+    color: rgb(147, 146, 143);
+    font-weight: 700;
+}
+  .SideBarFooter {
+    text-align: center;
+  }
+  
+  .SideBarFooter .button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }

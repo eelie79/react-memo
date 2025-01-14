@@ -1,5 +1,7 @@
 import React from "react";
-import MomoList from "./MomoList";
+import "./index.css";
+
+import MomoList from "../MemoList";
 import SideBarHeader from "./SideBarHeader";
 import SideBarFooter from "./SideBarFooter";
 

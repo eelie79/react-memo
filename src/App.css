@@ -20,6 +20,7 @@
   width: 100%;
   white-space: nowrap;
   text-overflow: ellipsis;
+  /* text-overflow: ellipsis;  // 엘립시스 */
   overflow: hidden;
   padding: 5px 8px;
  }

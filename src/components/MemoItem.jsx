@@ -1,13 +1,8 @@
 import React from "react";
 
-function MemoItem({ children, index, setSelectedMemoIndex }) {
+function MemoItem({ children, onClick, isSelected }) {
   return (
-    <div
-      onClick={() => {
-        console.log("clicked!");
-        setSelectedMemoIndex(index);
-      }}
-    >
+    <div onClick={onClick} className={"MemoItem" + (isSelected ? " selected" : "")}>
       {children}
     </div>
   );

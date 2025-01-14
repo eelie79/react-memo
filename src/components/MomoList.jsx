@@ -1,7 +1,7 @@
 import React from "react";
 import MemoItem from "./MemoItem";
 
-function MomoList({ memos, selectedMemoIndex, setSelectedMemoIndex }) {
+function MomoList({ memos, selectedMemoIndex, setSelectedMemoIndex, deleteMemo }) {
   return (
     <div>
       {memos.map((memo, index) => (
@@ -11,8 +11,13 @@ function MomoList({ memos, selectedMemoIndex, setSelectedMemoIndex }) {
             setSelectedMemoIndex(index);
           }}
           isSelected={index === selectedMemoIndex}
+          onClickDelete={(e) => {
+            deleteMemo(index);
+            e.preventDefault();
+            e.stopPropagation();
+          }}
         >
-          {memo.title}
+          <h3>{memo.title}</h3>
         </MemoItem>
       ))}
     </div>

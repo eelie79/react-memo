@@ -16,6 +16,19 @@
   background-color: aqua;
 }
 
+.SideBarFooter {
+  text-align: center;
+}
+
+.SideBarFooter .button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
 .MemoItem {
   width: 100%;
   white-space: nowrap;
@@ -23,6 +36,24 @@
   /* text-overflow: ellipsis;  // 엘립시스 */
   overflow: hidden;
   padding: 5px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  min-height: 38px;
+ }
+
+ .MemoItem .delete.button{
+  padding: 2px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+  border: none;
+ }
+
+ .MemoItem:hover .delete.button{
+  display: block;
  }
  
  .MemoItem.selected {
